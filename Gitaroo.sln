@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{C89B00FD-C9E8-9CDC-CD64-95E221D6E653}") = "Gitaroo", "Assembly-CSharp.csproj", "{044980C4-521E-D180-41E5-E9D186B447F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{044980C4-521E-D180-41E5-E9D186B447F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{044980C4-521E-D180-41E5-E9D186B447F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{044980C4-521E-D180-41E5-E9D186B447F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{044980C4-521E-D180-41E5-E9D186B447F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
