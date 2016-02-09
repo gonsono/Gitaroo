@@ -9,13 +9,11 @@ public class spawn : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
 	}
 
 	void Spawn () {
-		Rigidbody2D Block = (Rigidbody2D) Instantiate(def_pref, transform.position, transform.rotation);
-		Vector3 direction = Vector3.zero - transform.position;
-		Block.velocity = direction * speed;
+		//Rigidbody2D Block = (Rigidbody2D) Instantiate(def_pref, transform.position, transform.rotation);
+		Instantiate(def_pref, transform.position, transform.rotation);
 	}
 
 	// Update is called once per frame
