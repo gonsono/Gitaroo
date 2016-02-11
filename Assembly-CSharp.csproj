@@ -47,9 +47,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\SpotController.cs" />
      <Compile Include="Assets\Scripts\block.cs" />
-     <Compile Include="Assets\Scripts\distCounter.cs" />
+     <Compile Include="Assets\Scripts\gameMode.cs" />
      <Compile Include="Assets\Scripts\song.cs" />
      <Compile Include="Assets\Scripts\spawn.cs" />
+     <Compile Include="Assets\Scripts\timer.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>E:/Programmes/Unity3D/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

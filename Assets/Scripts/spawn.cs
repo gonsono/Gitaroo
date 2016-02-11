@@ -11,7 +11,7 @@ public class spawn : MonoBehaviour {
 	void Start () {
 	}
 
-	void Spawn () {
+	public void Spawn () {
 		//Rigidbody2D Block = (Rigidbody2D) Instantiate(def_pref, transform.position, transform.rotation);
 		Instantiate(def_pref, transform.position, transform.rotation);
 	}

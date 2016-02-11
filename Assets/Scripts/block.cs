@@ -1,19 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class block : MonoBehaviour {
 
 	public Vector3 initPos;
 	public float initDist;
-	public float speed = 0.5f;
-	public float counter = 0f;
+	public float speed;
+	public float movement;
 
 	// Use this for initialization
 	void Start () {
+		GameObject song = GameObject.Find("song_pref(Clone)");
+		song songScript = song.GetComponent<song>();
+		speed = songScript.speed;
 		initPos = transform.position;
 		initDist = Mathf.Abs(initPos.x + initPos.y);
-		speed = 0.5f;
-		counter = 0f;
 	}
 
 	// Update is called once per frame
@@ -21,14 +23,22 @@ public class block : MonoBehaviour {
 		
 		float distFromSpawn = Vector3.Distance (transform.position, initPos);
 
-		if (distFromSpawn >= initDist) {
+		if (distFromSpawn >= (initDist)) {
+
+			GameObject timer = GameObject.Find("timer");
+			timer timerScript = timer.GetComponent<timer>();
+
+			GameObject timeCheck = GameObject.Find("time_check");
+			Text timeCheckText = timeCheck.GetComponent<Text>();
+			timeCheckText.text += " " + timerScript.currentTime.ToString("F2");
+
 			Destroy(gameObject);
 		}
 	}
 
 	void FixedUpdate(){
 		Vector3 move = Vector3.zero - initPos;
-		transform.Translate (move * (speed * (1/initDist)));
-		counter += 1;
+		movement = (move.magnitude / initDist) * speed;
+		transform.Translate ((move/initDist) * speed );
 	}
 }

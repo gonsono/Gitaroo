@@ -8,22 +8,31 @@ public class SpotController : MonoBehaviour
 	public float vAxis = 0;
 	public bool buttonDown;
 	public string gameMode;
+	public GameObject song_pref;
 
 	// Use this for initialization
 	void Start () {
-
+		gameMode = "Intro"; // Intro, Charge, Guard, Attack, Harmony, End
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		gameMode = "Guard"; // Intro, Charge, Guard, Attack, Harmony, End
 		GameObject spotFx = transform.Find ("control_spot_fx").gameObject; 
 		GameObject defCross = transform.Find ("def_cross").gameObject;
 
 		buttonDown = Input.GetButton ("Fire2");
 
-		if (gameMode == "Charge" || gameMode == "Attack") {
+		if (Input.GetButtonDown ("R1")) {
+			gameMode = "Guard";
+			Instantiate (song_pref);
+		}
+
+		if (gameMode == "Intro") {
+			defCross.GetComponent<Renderer> ().enabled = false;
+			spotFx.GetComponent<Renderer> ().enabled = false;
+		}
+		else if (gameMode == "Charge" || gameMode == "Attack") {
 			
 			defCross.GetComponent<Renderer> ().enabled = false;
 
@@ -45,9 +54,7 @@ public class SpotController : MonoBehaviour
 			float angle = Mathf.Atan2 (vAxis, hAxis) * Mathf.Rad2Deg;
 			transform.rotation = Quaternion.AngleAxis (angle - 90, Vector3.forward);
 		}
-
-
-		if (gameMode == "Guard") {
+		else if (gameMode == "Guard") {
 			defCross.GetComponent<Renderer> ().enabled = true;
 			spotFx.GetComponent<Renderer> ().enabled = false;
 

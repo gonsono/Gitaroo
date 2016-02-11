@@ -2,10 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\song.cs">
     <Files>
-      <File FileName="Assets\Scripts\spawn.cs" Line="16" Column="3" />
-      <File FileName="Assets\Scripts\song.cs" Line="23" Column="36" />
-      <File FileName="Assets\Scripts\block.cs" Line="9" Column="5" />
-      <File FileName="Assets\Scripts\SpotController.cs" Line="29" Column="4" />
+      <File FileName="Assets\Scripts\song.cs" Line="12" Column="26" />
+      <File FileName="Assets\Scripts\timer.cs" Line="13" Column="36" />
+      <File FileName="Assets\Scripts\block.cs" Line="10" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
