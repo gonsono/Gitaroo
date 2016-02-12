@@ -19,8 +19,8 @@ public class spawn : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetButtonDown(button)) {
-		Spawn();
-		}
+//		if (Input.GetButtonDown(button)) {
+//		Spawn();
+//		}
 	}
 }

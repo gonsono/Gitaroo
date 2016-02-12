@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{044980C4-521E-D180-41E5-E9D186B447F1}</ProjectGuid>
+    <ProjectGuid>{603F489B-EF3F-67CA-0A57-7E469B89541D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -38,24 +38,27 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>E:/Programmes/Unity3D/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>G:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>E:/Programmes/Unity3D/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>G:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\SequenceController.cs" />
      <Compile Include="Assets\Scripts\SpotController.cs" />
+     <Compile Include="Assets\Scripts\TrackController.cs" />
      <Compile Include="Assets\Scripts\block.cs" />
      <Compile Include="Assets\Scripts\gameMode.cs" />
+     <Compile Include="Assets\Scripts\pTiming.cs" />
      <Compile Include="Assets\Scripts\song.cs" />
      <Compile Include="Assets\Scripts\spawn.cs" />
      <Compile Include="Assets\Scripts\timer.cs" />
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/Programmes/Unity3D/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>G:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>E:/Programmes/Unity3D/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>G:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

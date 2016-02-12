@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{C89B00FD-C9E8-9CDC-CD64-95E221D6E653}") = "Gitaroo", "Assembly-CSharp.csproj", "{044980C4-521E-D180-41E5-E9D186B447F1}"
+Project("{7D44BD79-2D95-BE65-0B46-F8EC6412599D}") = "gitaroo", "Assembly-CSharp.csproj", "{603F489B-EF3F-67CA-0A57-7E469B89541D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{044980C4-521E-D180-41E5-E9D186B447F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{044980C4-521E-D180-41E5-E9D186B447F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{044980C4-521E-D180-41E5-E9D186B447F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{044980C4-521E-D180-41E5-E9D186B447F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{603F489B-EF3F-67CA-0A57-7E469B89541D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{603F489B-EF3F-67CA-0A57-7E469B89541D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{603F489B-EF3F-67CA-0A57-7E469B89541D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{603F489B-EF3F-67CA-0A57-7E469B89541D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
