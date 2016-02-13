@@ -1,10 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\song.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\pTiming.cs">
     <Files>
-      <File FileName="Assets\Scripts\song.cs" Line="12" Column="26" />
-      <File FileName="Assets\Scripts\timer.cs" Line="13" Column="36" />
-      <File FileName="Assets\Scripts\block.cs" Line="10" Column="24" />
+      <File FileName="Assets\Scripts\pTiming.cs" Line="8" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
