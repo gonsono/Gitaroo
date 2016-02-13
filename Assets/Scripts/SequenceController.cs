@@ -7,9 +7,9 @@ public class SequenceController : MonoBehaviour {
 	void Start () {
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void FixedUpdate () {
+		transform.Translate (1, 0, 0);
 	}
+
 }
