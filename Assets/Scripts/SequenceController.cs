@@ -9,7 +9,7 @@ public class SequenceController : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		transform.Translate (1, 0, 0);
+		transform.Translate (-1, 0, 0);
 	}
 
 }
