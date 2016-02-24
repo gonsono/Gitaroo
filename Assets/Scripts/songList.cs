@@ -7,10 +7,7 @@ using SimpleJson;
 using System.Text;
 
 public class songList : MonoBehaviour {
-
-	//public TextAsset songFile;
-	public string title;
-	public string bpm;
+	
 	private songMetaData songJson;
 	public songPanel song_panel_prefab;
 
@@ -29,12 +26,14 @@ public class songList : MonoBehaviour {
 
 			songPanel song_panel = (songPanel)Instantiate (song_panel_prefab);
 			// 40 * -470
+			int offset = i * 120;
 			song_panel.transform.SetParent(gameObject.transform);
-			song_panel.transform.localPosition = new Vector3 (0, 200, 0);
+			song_panel.transform.localPosition = new Vector3 (20, 200 - offset, 0);
 			song_panel.title = songJson.title;
 			song_panel.artist = songJson.artist;
 			song_panel.desc = songJson.description;
 			song_panel.bpm = songJson.bpm + " bpm";
+			song_panel.diffs = songJson.difficulties;
 		}
 	}
 	
@@ -63,4 +62,7 @@ public class songMetaData
 	public string duration;
 	public string bpm;
 	public string image;
+	public List<int> difficulties;
+	public string url;
+	public string theme;
 }
