@@ -28,12 +28,13 @@ public class songList : MonoBehaviour {
 			// 40 * -470
 			int offset = i * 120;
 			song_panel.transform.SetParent(gameObject.transform);
-			song_panel.transform.localPosition = new Vector3 (20, 200 - offset, 0);
+			song_panel.transform.localPosition = new Vector3 (50, 200 - offset, 0);
 			song_panel.title = songJson.title;
 			song_panel.artist = songJson.artist;
 			song_panel.desc = songJson.description;
 			song_panel.bpm = songJson.bpm + " bpm";
 			song_panel.diffs = songJson.difficulties;
+			song_panel.cover = songJson.image;
 		}
 	}
 	
